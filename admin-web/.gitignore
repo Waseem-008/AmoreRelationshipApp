@@ -1,0 +1,29 @@
+# Production build
+dist/
+build/
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# Testing
+coverage/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# OS
+.DS_Store

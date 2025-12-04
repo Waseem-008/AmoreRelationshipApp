@@ -1,0 +1,27 @@
+{
+    "name": "amora-mvp",
+    "version": "1.0.0",
+    "description": "Amora MVP - Relationship wellness app for couples",
+    "private": true,
+    "scripts": {
+        "setup": "npm run setup:admin && npm run setup:backend",
+        "setup:admin": "cd admin-web && npm install",
+        "setup:backend": "cd backend && supabase link",
+        "dev:admin": "cd admin-web && npm run dev",
+        "build:admin": "cd admin-web && npm run build",
+        "deploy:functions": "cd backend && supabase functions deploy --no-verify-jwt",
+        "deploy:db": "cd backend && supabase db push",
+        "deploy:all": "npm run deploy:db && npm run deploy:functions",
+        "test:backend": "cd backend && supabase functions serve",
+        "logs:functions": "cd backend && supabase functions logs"
+    },
+    "keywords": [
+        "relationship",
+        "wellness",
+        "ai",
+        "couples",
+        "ios"
+    ],
+    "author": "Amora Team",
+    "license": "UNLICENSED"
+}
